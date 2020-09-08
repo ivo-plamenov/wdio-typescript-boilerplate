@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "baseUrl": ".",
+        "paths": {
+            "*": [ "./*" ],
+        },
+        "types": ["node", "@wdio/sync", "@wdio/mocha-framework", "chai", "@wdio/selenium-standalone-service", "wdio-image-comparison-service"]
+    },    
+    "include": [
+        "./src/**/*.ts",
+        "./config/**/*.ts",
+        "./test/**/*.ts"
+    ],
+    "exclude": [
+      "./node_modules"
+    ]
+  }

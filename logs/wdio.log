@@ -1,0 +1,11 @@
+2020-09-07T21:02:47.879Z ERROR @wdio/runner: TypeError: Cannot read property 'use' of undefined
+    at Object.<anonymous> (/home/ivo/forge/wdio-typescript-boilerplate/test/specs/api/APIExample.test.ts:4:6)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Module.m._compile (/home/ivo/forge/wdio-typescript-boilerplate/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Object.require.extensions.<computed> [as .ts] (/home/ivo/forge/wdio-typescript-boilerplate/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /home/ivo/forge/wdio-typescript-boilerplate/node_modules/mocha/lib/mocha.js:390:36
