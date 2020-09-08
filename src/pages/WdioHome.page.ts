@@ -1,6 +1,6 @@
 import BasePage from './Base.page'
-import Button from 'src/components/Button.component';
-import PageElement from 'src/components/PageElement.component';
+import Button from '../components/Button.component';
+import PageElement from '../components/PageElement.component';
 
 class WdioHome extends BasePage {
     get getStartedButton(): Button { return new Button('Get Started', '//a[text()="Get Started"]'); }

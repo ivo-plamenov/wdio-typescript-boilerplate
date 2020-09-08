@@ -1,5 +1,5 @@
 import BasePage from './Base.page';
-import PageElement from 'src/components/PageElement.component';
+import PageElement from '../components/PageElement.component';
 import { Element } from '@wdio/sync';
 
 class Versions extends BasePage {

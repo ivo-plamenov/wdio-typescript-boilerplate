@@ -3,12 +3,13 @@
         "target": "ES2018",
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
+        "resolveJsonModule": true,
         "module": "commonjs",
         "baseUrl": ".",
         "paths": {
             "*": [ "./*" ],
         },
-        "types": ["node", "@wdio/sync", "@wdio/mocha-framework", "chai", "@wdio/selenium-standalone-service", "wdio-image-comparison-service"]
+        "types": ["node", "@wdio/sync", "@wdio/mocha-framework", "chai", "@wdio/selenium-standalone-service", "@wdio/cucumber-framework", "wdio-image-comparison-service"]
     },    
     "include": [
         "./src/**/*.ts",
