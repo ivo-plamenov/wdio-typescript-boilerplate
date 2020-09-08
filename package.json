@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:selenium": "npx wdio config/seleniumStandalone.conf.js",
+    "test:api": "npx wdio config/api.conf.js",
+    "test:visual": "npx wdio config/visualTest.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivo-plamenov/wdio-typescript-boilerplate.git"
   },
   "author": "Ivaylo Ivanov",
   "license": "MIT",

@@ -1,9 +1,7 @@
-import { Config } from '@wdio/sync';
-import { join } from 'path';
 const getLogger = require('@wdio/logger').default;
 const log = getLogger('hooks');
 
-const config: Config = {
+const baseConfig: WebdriverIO.Config  = {
     //
     // ====================
     // Runner Configuration
@@ -63,10 +61,6 @@ const config: Config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    },
-    {
-        maxInstances: 5,
-        browserName: 'firefox'
     }],
     //
     // ===================
@@ -119,32 +113,7 @@ const config: Config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: [
-        'selenium-standalone', 
-        ['image-comparison',
-        // The options
-        {
-            // Some options, see the docs for more
-            baselineFolder: join(process.cwd(), './screenshots/reference/'),
-            formatImageName: '{tag}-{logName}-{width}x{height}',
-            screenshotPath: join(process.cwd(), './screenshots/'),
-            savePerInstance: true,
-            autoSaveBaseline: true,
-            blockOutStatusBar: true,
-            blockOutToolBar: true,
-            // Options for the tabbing image
-            tabbableOptions:{
-                circle:{
-                    size: 18,
-                    fontSize: 18,
-                    // ...
-                },
-                line:{
-                    color: '#ff221a', // hex-code or for example words like `red|black|green`
-                    width: 3,
-                },
-            }
-            // ... more options
-        }],
+        'selenium-standalone',
     ],
     
     // Framework you want to run your specs with.
@@ -315,4 +284,4 @@ const config: Config = {
     //}
 }
 
-export { config }
+export { baseConfig }
