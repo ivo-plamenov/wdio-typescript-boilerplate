@@ -15,4 +15,14 @@ describe('API Examples with JSONtest.com', () => {
                     });
         });
     });
+    it('should use a headers service', () => {
+        browser.call(() => {
+            return chai.request('http://headers.jsontest.com')
+                    .get('/')
+                    .then((response) => {
+                        expect(response).to.have.status(200);
+                        expect(response.type).to.equal('application/json');
+                    });
+        });
+    });
 });
