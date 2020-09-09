@@ -1,7 +1,7 @@
 {
   "name": "wdio-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate TypeScript project for WebdriverIO",
   "scripts": {
     "test:selenium": "npx wdio config/seleniumStandalone.conf.js",
     "test:api": "npx wdio config/api.conf.js",
