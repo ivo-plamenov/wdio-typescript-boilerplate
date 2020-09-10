@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Boilerplate TypeScript project for WebdriverIO",
   "scripts": {
-    "test:selenium": "npx wdio config/seleniumStandalone.conf.js",
+    "test:mocha": "npx wdio config/seleniumStandalone.conf.js",
+    "test:cucumber": "npx wdio config/cucumber.conf.js",
     "test:api": "npx wdio config/api.conf.js",
     "test:visual": "npx wdio config/visualTest.conf.js",
     "repl": "wdio repl chrome"

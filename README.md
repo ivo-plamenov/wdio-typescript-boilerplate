@@ -28,8 +28,11 @@ npm install
 ## Test Execution
 
 ```
-# Selenium Standalone tests
-npm run test:selenium
+# Selenium Standalone tests with Mocha
+npm run test:mocha
+
+# Selenium Standalone tests with Cucumber
+npm run test:cucumber
 
 # API tests
 npm run test:api
