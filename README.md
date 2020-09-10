@@ -13,7 +13,7 @@ A boilerplate TypeScript project for WebdriverIO, featuring examples of Selenium
 * Configurations for Selenium Standalone with Mocha and Cucumber, API, and visual regression testing
 
 ## Prerequisites
-* Node v.8 or higher
+* Node v.12.16.1 or higher
 * Latest versions of Chrome and Firefox
 
 ## Installation
